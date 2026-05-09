@@ -3,55 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangaZen - 100% VF & VOSTFR</title>
+    <title>MangaZen - Streaming VF</title>
     <style>
         body { font-family: sans-serif; background-color: #0f0f0f; color: white; margin: 0; }
         header { background-color: #e50914; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; }
         .container { padding: 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; }
-        
-        .card { background: #1a1a1a; border-radius: 10px; overflow: hidden; text-decoration: none; color: white; display: block; border: 1px solid #333; }
+        .card { background: #1a1a1a; border-radius: 10px; overflow: hidden; text-decoration: none; color: white; display: block; border: 1px solid #333; text-align: center; }
         .card img { width: 100%; height: 230px; object-fit: cover; }
-        .card-info { padding: 10px; text-align: center; }
-        
-        /* Boutons de langue */
-        .lang-select { display: flex; justify-content: center; gap: 5px; padding-bottom: 10px; }
-        .btn-vf { background: #e50914; color: white; border: none; padding: 5px 10px; border-radius: 3px; font-size: 10px; cursor: pointer; }
-        .btn-vo { background: #444; color: white; border: none; padding: 5px 10px; border-radius: 3px; font-size: 10px; }
+        .btn-play { background: #e50914; color: white; padding: 10px; display: block; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
-
-<header>MANGAZEN</header>
-
-<div class="container">
-    <h2>Animés (VF Prioritaire)</h2>
-    <div class="grid">
-        
-        <div class="card">
-            <img src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtY2NmMi00OTk1LTk4Y2ItMDk2Y2QyZDU5MTU1XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="One Piece">
-            <div class="card-info">
-                <p>One Piece</p>
-                <div class="lang-select">
-                    <a href="lecteur.html?id=op-vf" class="btn-vf">VF</a>
-                    <button class="btn-vo">VOSTFR</button>
-                </div>
+    <header>MANGAZEN</header>
+    <div class="container">
+        <h2>Animés en VF</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtY2NmMi00OTk1LTk4Y2ItMDk2Y2QyZDU5MTU1XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="One Piece">
+                <p>One Piece (Tous les épisodes)</p>
+                <a href="lecteur.html" class="btn-play">REGARDER EN VF</a>
             </div>
         </div>
-
-        <div class="card">
-            <img src="https://media.nautiljon.com/mangas_items/00/15/gachakuta_14551.jpg" alt="Gachakuta">
-            <div class="card-info">
-                <p>Gachakuta</p>
-                <div class="lang-select">
-                    <a href="lecture.html" class="btn-vf">SCAN VF</a>
-                </div>
-            </div>
-        </div>
-
     </div>
-</div>
-
 </body>
 </html>
-
