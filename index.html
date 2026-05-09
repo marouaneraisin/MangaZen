@@ -6,51 +6,34 @@
     <title>MangaZen</title>
     <style>
         body { font-family: sans-serif; background-color: #0f0f0f; color: white; margin: 0; padding: 0; }
-        header { background-color: #e50914; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; text-transform: uppercase; }
-        nav { display: flex; justify-content: center; gap: 20px; background: #1a1a1a; padding: 15px; sticky: top; }
+        header { background-color: #e50914; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; }
+        nav { display: flex; justify-content: center; gap: 20px; background: #1a1a1a; padding: 15px; }
         nav a { color: white; text-decoration: none; font-weight: bold; }
         .container { padding: 20px; }
-        h2 { border-left: 5px solid #e50914; padding-left: 10px; margin-bottom: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
-        
-        /* Style des liens cliquables */
-        .card { background: #1a1a1a; border-radius: 10px; overflow: hidden; text-align: center; text-decoration: none; color: white; display: block; transition: 0.3s; }
-        .card:hover { transform: scale(1.05); border: 1px solid #e50914; }
-        .card img { width: 100%; height: 220px; object-fit: cover; }
-        .card p { padding: 10px; margin: 0; font-size: 14px; font-weight: bold; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; }
+        .card { background: #1a1a1a; border-radius: 10px; overflow: hidden; text-decoration: none; color: white; display: block; }
+        .card img { width: 100%; height: 230px; object-fit: cover; }
+        .card p { padding: 10px; margin: 0; font-size: 14px; text-align: center; }
     </style>
 </head>
 <body>
-
-<header>MANGAZEN</header>
-
-<nav>
-    <a href="#animes">ANIMÉS</a>
-    <a href="#scans">SCANS</a>
-</nav>
-
-<div class="container">
-    <h2 id="animes">Dernières Sorties Animés</h2>
-    <div class="grid">
-        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="card">
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202206/0713/6K5Sg0j2yZ2Vf3h3g9g9g9g9.png" alt="One Piece">
-            <p>One Piece - Ep 1100</p>
-        </a>
-
-        <a href="#" class="card">
-            <img src="https://cdn.staticneo.com/w/naruto/thumb/Naruto_Shippuden.jpg/300px-Naruto_Shippuden.jpg" alt="Naruto">
-            <p>Naruto Shippuden</p>
-        </a>
+    <header>MANGAZEN</header>
+    <nav><a href="#">ANIMÉS</a> <a href="#">SCANS</a></nav>
+    <div class="container">
+        <h2>Animés</h2>
+        <div class="grid">
+            <a href="https://www.youtube.com/watch?v=MCb13lbVGE0" class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtY2NmMi00OTk1LTk4Y2ItMDk2Y2QyZDU5MTU1XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="One Piece">
+                <p>One Piece</p>
+            </a>
+        </div>
+        <h2>Scans</h2>
+        <div class="grid">
+            <a href="lecture.html" class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMGUyZjk3NWUtZDU2MC00ZDRhLWIwYmEtN2Y2NzZlY2FmNjA0XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg" alt="Gachakuta">
+                <p>Gachakuta - Chap 01</p>
+            </a>
+        </div>
     </div>
-
-    <h2 id="scans">Derniers Scans</h2>
-    <div class="grid">
-        <a href="#" class="card">
-            <img src="https://covers.openlibrary.org/b/id/13101032-L.jpg" alt="Gachakuta">
-            <p>Gachakuta - Chap 01</p>
-        </a>
-    </div>
-</div>
-
 </body>
 </html>
