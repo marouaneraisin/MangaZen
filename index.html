@@ -1,17 +1,48 @@
-    <h2 id="animes">Dernières Sorties Animés</h2>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaZen - Streaming & Scans</title>
+    <style>
+        body { font-family: sans-serif; background-color: #0f0f0f; color: white; margin: 0; padding: 0; }
+        header { background-color: #e50914; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; }
+        nav { display: flex; justify-content: center; gap: 20px; background: #1a1a1a; padding: 15px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        .container { padding: 20px; }
+        h2 { border-left: 5px solid #e50914; padding-left: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px; }
+        .card { background: #1a1a1a; border-radius: 10px; overflow: hidden; text-align: center; }
+        .card img { width: 100%; height: 240px; object-fit: cover; background-color: #333; }
+        .card p { padding: 10px; margin: 0; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<header>MANGAZEN</header>
+
+<nav>
+    <a href="#">ANIMÉS</a>
+    <a href="#">SCANS</a>
+</nav>
+
+<div class="container">
+    <h2>Dernières Sorties Animés</h2>
     <div class="grid">
         <div class="card">
             <img src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtY2NmMi00OTk1LTk4Y2ItMDk2Y2QyZDU5MTU1XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="One Piece">
             <p>One Piece - Ep 1100</p>
         </div>
-        
         <div class="card">
             <img src="https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00YzcwLWIyMzctOTU3MmU4MTZkZDVmXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg" alt="Naruto">
             <p>Naruto Shippuden</p>
         </div>
-
         <div class="card">
-            <img src="https://media.nautiljon.com/mangas_items/00/15/gachakuta_14551.jpg" alt="Gachakuta">
+            <img src="https://images.nautiljon.com/mangas_items/00/15/gachakuta_14551.jpg" alt="Gachakuta">
             <p>Gachakuta - Ep 01</p>
         </div>
     </div>
+</div>
+
+</body>
+</html>
